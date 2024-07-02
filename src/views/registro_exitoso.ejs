@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %> - Gestión de usuario</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <div class="login">
+        <h1>Gestión de usuario/clave</h1>
+        <div class="alert">
+            <p id="noapreta">
+                Has registrado a un nuevo usuario exitosamente.
+            </p>
+            <p id="apreta">¡FELICIDADES!.</p>
+        </div>
+        <h3 id="bendiciones">¡BENDICIONES!</h3>
+        <div class="olvido">
+            <a href="/sesion_iniciada" id="olvidouno">Quiero registrar otro usuario</a>
+            <a href="/sesion_iniciada" id="olvidodos">Déjame hacerlo</a>
+        </div>
+        <div class="olvido">
+            <a href="/verificar_usuario" id="olvidouno">Quiero cerrar sesión porfis</a>
+            <a href="/verificar_usuario" id="olvidodos">Sácame de aquí</a>
+        </div>
+    </div>
+</body>
+</html>

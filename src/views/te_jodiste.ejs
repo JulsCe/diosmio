@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %> - Gestión de usuario</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <div class="login">
+        <h1>Gestión de usuario/clave</h1>
+        <div class="alert">
+            <p id="noapreta">
+                No podemos hacer más nada por ti, comunícate con tu jefe para solucionar este problema
+            </p>
+            <p id="apreta">La inteligencia te persigue</p>
+        </div>
+        <h3 id="bendiciones">¡PERO ERES MAS VELOZ!</h3>
+        <div class="olvido">
+            <a href="/sesion_iniciada" id="olvidouno">Ya recordé mi pregunta</a>
+            <a href="/sesion_iniciada" id="olvidodos">Pero graciaas por el insulto</a>
+        </div>
+        <div class="olvido">
+            <a href="/" id="olvidouno">Llévame al inicio entonces</a>
+            <a href="/" id="olvidodos">¡Qué mal servicio!</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <div class="login">
+        <h1>Gestión de usuario/clave</h1>
+        <p class="alert">
+            Usted ha indicado no recordar su usuario. Ingrese los datos solicitados a continuación para realizar una búsqueda en el sistema.
+        </p>
+        <form action="/buscar" method="post">
+            <label for="nombre">
+                <!-- font awesome icon -->
+                <i class="fas fa-user"></i>
+            </label>
+            <input type="text" name="nombre" placeholder="Nombre" id="nombre" required>
+            <label for="cedula">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="number" name="cedula" placeholder="Cedula" id="Cedula" required>
+            <input type="submit" value="Enviar">
+        </form>
+        <div id="isesion">
+            <a href="/">Volver a iniciar sesión</a>
+        </div>
+    </div>
+</body>
+</html>

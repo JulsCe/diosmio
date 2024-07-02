@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <div class="login">
+        <h1>Contact</h1>
+        <form action="/contact" method="post">
+            <label for="nombre">
+                <!-- font awesome icon -->
+                <i class="fas fa-user"></i>
+            </label>
+            <input type="text" name="nombre" placeholder="Nombre" id="nombre" required>
+            <label for="cedula">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="number" name="cedula" placeholder="Cedula" id="Cedula" required>
+            <label for="correo">
+                <i class="fas fa-user"></i>
+            </label>
+            <input type="email" name="correo" placeholder="Correo" id="correo" required>
+            <h4>Déjanos tu comentario:</h4>
+            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %> - Gestión de usuario</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <div class="login">
+        <h1>Gestión de usuario/clave</h1>
+        <div class="alert">
+            <p id="noapreta">
+                El usuario ingresado no existe, por favor, verifique e intente de nuevo. Si está intentando acceder si un usuario previamente asignado, tendrá conseuencias.
+            </p>
+            <p id="apreta">Usted no está apretando.</p>
+        </div>
+        <h3 id="bendiciones">¡Bendiciones!</h3>
+        <div class="olvido">
+            <a href="/verificar_usuario" id="olvidouno">Quiero volver a intentarlo por favor</a>
+            <a href="/verificar_usuario" id="olvidodos">Me equivoqué</a>
+        </div>
+        <div id="isesion">
+            <a href="/">Volver a iniciar sesión</a>
+        </div>
+    </div>
+</body>
+</html>

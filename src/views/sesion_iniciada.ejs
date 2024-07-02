@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="login">
+        <h1>Registro</h1>
+        <form action="/register" method="post">
+            <label for="nombre">
+                <!-- font awesome icon -->
+                <i class="fas fa-user"></i>
+            </label>
+            <input type="text" name="nombre" placeholder="Nombre" id="nombre" required>
+            <label for="cedula">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="number" name="cedula" placeholder="Cedula" id="cedula" required>
+            <label for="correo">
+                <i class="fas fa-user"></i>
+            </label>
+            <input type="email" name="correo" placeholder="Correo" id="correo" required>
+            <label for="clave">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="password" name="clave" placeholder="Clave" id="clave" required>
+            <label for="confirmarclave">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="password" name="confirmarclave" placeholder="Confirma la clave" id="confirmarclave" required>
+            <label for="select">
+                <i class="fas fa-user"></i>
+            </label>
+            <select name="presegura" id="presegura" required>
+                <optgroup label="Selecciona">
+                    <option value="1">Nombre de tu primera mascota</option>
+                    <option value="2">Lugar favorito de viaje</option>
+                    <option value="3">Mejor amigo de la infancia</option>
+                    <option value="4">Dia de tu muerte</option>
+                    <option value="5">Fecha de caducidad de linux</option>
+                    <option value="6">Cancion favorita de Taylor Swift</option>
+                    <option value="7">La persona que más apreta</option>
+                    <option value="8">Coreano favorito</option>
+                    <option value="9">Sabor de helado favorito</option>
+                    <option value="10">Momento más feliz en tu vida</option>
+                </optgroup>
+            </select>
+            <label for="resegura">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="text" name="resegura" placeholder="Respuesta" id="resegura" required>
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+</body>
+</html>

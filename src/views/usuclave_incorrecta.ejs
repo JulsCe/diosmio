@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %> - Gestión de usuario</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <div class="login">
+        <h1>Gestión de usuario/clave</h1>
+        <div class="alert">
+            <p id="noapreta">
+                Has ingresado el usuario o la contraseña incorrectos, verifica y vuelve a intentarlo por favor. No te hagas perder el tiempo por equivocaciones tontas y escribe bien tus credenciales.
+            </p>
+            <p id="apreta">Apreta nojoda, ¡APRETA!</p>
+        </div>
+        <h3 id="bendiciones">¡Bendiciones!</h3>
+        <div class="olvido">
+            <a href="/" id="olvidouno">Quiero volver a intentarlo por favor</a>
+            <a href="/" id="olvidodos">Me equivoqué</a>
+        </div>
+    </div>
+</body>
+</html>

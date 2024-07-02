@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+.interior {
+    max-width: 100%;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.interior h1 {
+    color: #ffffff;
+    float: left;
+    padding: 15px 15px;
+    font-size: 25px;
+}
+
+.navegacion {
+    padding: 10px;
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 98px;
+    z-index: 1000;
+}
+
+.navegacion ul {
+    margin: 0;
+    list-style: none;
+    padding: 10px;
+}
+
+.navegacion ul li {
+    padding: 10px 20px;
+    display: inline-block;
+    position: relative;
+    transition: .3s linear;
+    z-index: 1000;
+}
+
+.navegacion ul li:hover {
+    transform: scale(1.2);
+    background-color: #001521;
+    border-radius: 10px;
+}
+
+.navegacion ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+
+
+.login {
+    width: 450px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 2px solid #0273b0;
+    border-radius: 10px;
+}
+
+.login h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    background-color: #1984bc;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.login form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.login form h4 {
+    background-color: #1984bc;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.login form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #1984bc;
+    color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.login form input, .login form input, .login form select {
+    width: 310px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.login form input[type="submit"] {
+    width: 50%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #1984bc;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+}
+
+.login form input[type="submit"]:hover {
+    background-color: #0273b0;
+    transition: background-color 0.2s;
+    transform: scale(1.05);
+}
+
+.olvido {
+    height: 30px;
+}
+
+.olvido a {
+    text-decoration: none;
+    color: #02466b;
+}
+
+.olvido a:hover {
+    color: #1984bc;
+    font-weight: bold;
+    transform: scale(1.01);
+    text-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+}
+
+#olvidouno {
+    float: left;
+}
+
+#olvidodos {
+    float: right;
+}
+
+#isesion {
+    padding-top: 10px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+}
+
+#isesion a {
+    text-decoration: none;
+    color: #02466b;
+}
+
+#isesion a:hover {
+    color: #1984bc;
+    font-weight: bold;
+    transform: scale(1.5);
+    text-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+}
+
+.login h4 {
+    width: 70%;
+    background-color: #1984bc;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+}
+
+.alert {
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    background-color: #0273b0;
+    border: 1px solid #0273b0;
+    box-shadow: 0 0 9px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+#noapreta {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+#apreta {
+    margin-bottom: 0;
+    font-size: 23px;
+}
+
+#bendiciones {
+    color: #ffffff;
+    width: 40%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    background-color: #02466b;
+    border: 1px solid #0273b0;
+    box-shadow: 0 0 9px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+#comentario {
+    width: 90%;
+    height: 100px;
+    border: 2px solid #1984bc;
+    border-radius: 10px;
+}

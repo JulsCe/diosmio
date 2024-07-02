@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <div class="login">
+        <h1>Gestión de usuario/clave</h1>
+        <h4>Cambio de clave</h4>
+        <form action="/cambiar" method="post">
+            <label for="clave">
+                <!-- font awesome icon -->
+                <i class="fas fa-user"></i>
+            </label>
+            <input type="password" name="password" placeholder="Ingresa tu nueva clave" id="clave" required>
+            <label for="confirmarclave">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="cornfirmarclave" name="clave" placeholder="Confirma tu nueva clave" id="clave" required>
+            <input type="submit" value="Aceptar">
+        </form>
+        <div id="isesion">
+            <a href="/">Volver a iniciar sesión</a>
+        </div>
+    </div>
+</body>
+</html>

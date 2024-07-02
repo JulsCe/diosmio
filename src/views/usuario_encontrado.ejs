@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %> - Gestión de usuario</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <div class="login">
+        <h1>¡Usuario encontrado!</h1>
+        <h4>Selecciona tu pregunta de seguridad</h4>
+        <form action="/validarpreguntas" method="post">
+            <label for="preseguras">
+                <i class="fas fa-lock"></i>
+            </label>
+            <select name="presegura" id="presegura" required>
+                <optgroup label="Selecciona">
+                    <option value="1">Nombre de tu primera mascota</option>
+                    <option value="2">Lugar favorito de viaje</option>
+                    <option value="3">Mejor amigo de la infancia</option>
+                    <option value="4">Dia de tu muerte</option>
+                    <option value="5">Fecha de caducidad de linux</option>
+                    <option value="6">Cancion favorita de Taylor Swift</option>
+                    <option value="7">La persona que más apreta</option>
+                    <option value="8">Coreano favorito</option>
+                    <option value="9">Sabor de helado favorito</option>
+                    <option value="10">Momento más feliz en tu vida</option>
+                </optgroup>
+            </select>
+            <label for="resegura">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="text" name="resegura" placeholder="Indica tu respuesta" id="resegura" required>
+            <input type="submit" value="Verificar">
+        </form>
+        <div class="olvido">
+            <a href="/te_jodiste" id="olvidouno">No recuerdo mi pregunta de seguridad</a>
+            <a href="/te_jodiste" id="olvidodos">Perdoname</a>
+        </div>
+        <div id="isesion">
+            <a href="/">Volver a iniciar sesión</a>
+        </div>
+    </div>
+</body>
+</html>
